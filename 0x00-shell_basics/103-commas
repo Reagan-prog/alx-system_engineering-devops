@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a1 | sed '/^$/d' | sed '/^.$/d' | tr '\n' ',' | sed 's/,$/\n/' | sed -e 's/^\([0-9A-Za-z]\)/\1\//' -e 's/\.\.//' -e 's/\.$//' | sed 's/\([0-9]\)/0\1/g' | tr '\n' ',' | sed 's/,$/\n/'
+ls -pamv
